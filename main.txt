@@ -19,8 +19,7 @@ end)
 pairs(Noway)
 end)
 local Section = Tab:NewSection("Fly script all game ")
- Section:NewLabel("Not kicked from the map 100 % ")
-   Section:NewButton("fly", "fly Gui V3", function()
+   Section:NewButton("fly", "fly Gui V3 Not kicked from the map 100 % ", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
 end)
 local Section = Tab:NewSection("hitbox script all game ")
@@ -28,14 +27,4 @@ local Section = Tab:NewSection("hitbox script all game ")
    Section:NewButton("hitbox", "hitbox  V3", function()
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Update-script-hitbox-9326"))
 end)
-local Tab = Window:NewTab("script fish")
-local Section = Tab:NewSection("admin script all game")
-Section:NewLabel("")
-   Section:NewButton("fish Op script", "Speed Hub X", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/GameList.lua"))()
-for PlaceID, Execute in pairs(Games) do
-    if PlaceID == game.PlaceId then
-        loadstring(game:HttpGet(Execute))()
-    end
-end
-end)
+
